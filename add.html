@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script type="text/javascript" src="./assets/js/sdk/lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="./assets/js/sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="./assets/js/sdk/lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="./assets/js/sdk/lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="./assets/js/sdk/lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="./assets/js/sdk/lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="./assets/js/sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="./assets/js/sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="./assets/js/sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="./assets/js/sdk/lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="./assets/js/sdk/apigClient.js"></script>
+
+    <script src="./assets/js/add.js"></script>
+
+
+    <link href="./assets/css/main.css" rel="stylesheet">
+
+
+    <title>Photo Album</title>
+</head>
+<body>
+
+<div class="add_container">
+    <form id="add_form">
+        <label for="myimg">Select a file:</label>
+        <input type="file" id="myimg" name="myimg" accept="image/*">
+        <div id="labels_container">
+            <label for="labels">Labels:</label>
+            <input type="text" class="in" id="labels0" name="labels">
+            <button type="button" id="labels_add">Add</button>
+        </div>
+        <input class="a-s" value="Submit" type="submit">
+    </form>
+</div>
+
+<div id="search-container">
+    <form id="search-form">
+        <h4 id="status">Press the button below, and start speaking</h4>
+        <input id="search-field" type="text" placeholder="Search.." autocomplete="off" name="name" size="50">
+        <button type="button" id="speech">Speech to text</button>
+        <input value="Search" type="submit">
+    </form>
+</div>
+
+<div id="res-container">
+
+</div>
+
+  </body>
+</html>
